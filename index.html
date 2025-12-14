@@ -2,21 +2,39 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Halaman Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="login-container">
         <h2>Login</h2>
-        <form style="">
-            <label>Username</label>
-            <input type="text" placeholder="Masukkan username">
 
-            <label>Password</label>
-            <input type="password" placeholder="Masukkan password">
+        <form>
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" placeholder="Masukkan username" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Masukkan password" required>
+            </div>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox"> Ingat saya
+                </label>
+                <a href="#">Lupa password?</a>
+            </div>
 
             <button type="submit">Login</button>
         </form>
+
+        <p class="register">
+            Belum punya akun? <a href="#">Daftar</a>
+        </p>
     </div>
+
 </body>
 </html>
